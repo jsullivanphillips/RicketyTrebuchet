@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float enemySpeed = 1.0f;
     [SerializeField] private float enemyRange = 1.0f;
     [SerializeField] private float enemyAttackDelay = 2.5f;
-    [SerializeField] GameObject dummyOrb;
+    [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
 
     void IsPlayerInBubble() {
@@ -38,32 +38,32 @@ public class EnemyController : MonoBehaviour
     void EnemyAttack() {
         timePassed += Time.deltaTime;
         if (timePassed > enemyAttackDelay) {
-            // play animation
+            // plays animation
             Debug.Log("hit!");
             player.playerHealth -= 1;
             timePassed = 0f;
         }
     }
 
-    void OnDeath() { // how do I properly instantiate orb at postion of enemy
-        // Instantiate(dummyOrb);
-        // dummyOrb.transform = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+    void OnDeath() { // spawns "orb" at enemy then deletes enemy
+        Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        // plays animation
         Destroy(gameObject);
     }
 
     // private void OnTriggerEnter2D(Collider2D other) { //COULD: animation for enemy trying to smash bubble
     //     if (other.tag == "bubble") {
-    //         //play animation
+    //         // plays animation
     //     }
     // }
 
     void Start() {
-
+        
     }
 
     void Update() {
-        IsPlayerInBubble();
-
+        IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack
+        
         if (Input.GetKeyDown(KeyCode.LeftShift)) { // just to test dying
             OnDeath();
         }
@@ -75,6 +75,6 @@ public class EnemyController : MonoBehaviour
 // if player is not in bubble, give velocity in direction of player DONE
 // if within range of player, swing and deal damage DONE (need animation though)
 // Could: animation if enemy is touching bubble DONE (again need animation)
-// onDeath - drop orb and delete prefab
+// onDeath - drop orb and delete prefab DONE (animation / particles)
 // spawn function
 // 
