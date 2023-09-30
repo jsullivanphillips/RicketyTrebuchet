@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlayerDummyController : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] EnemyController enemy;
+    [SerializeField] private Rigidbody2D dummyPlayer;
+    public bool playerInBubble; // this maybe shouldn't be public i'm not sure
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            playerInBubble = ! playerInBubble;
+        }
         
     }
 }
