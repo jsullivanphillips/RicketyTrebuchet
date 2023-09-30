@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody2D player;
     private float moveHorizontal = 0;
     private float moveVertical = 0;
-    private Vector2 velocity;
+    //private Vector2 velocity;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
-        velocity = player.velocity;
+        //velocity = player.velocity;
     }
 
     private void FixedUpdate() {
