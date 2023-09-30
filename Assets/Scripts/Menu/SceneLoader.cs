@@ -22,14 +22,12 @@ public class SceneLoader : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void FadeIn()
+    public void FadeIn(Scene scene, LoadSceneMode mode)
     {
         _animator.SetTrigger("FadeIn");
-    }
-
-    public void FadeOut()
-    {
-        _animator.SetTrigger("FadeOut");
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+        SceneManager.sceneLoaded -= FadeIn;
     }
 
     public void LoadScene(string sceneName)
@@ -40,7 +38,8 @@ public class SceneLoader : MonoBehaviour
     IEnumerator LoadSceneHelper(string sceneName)
     {
         _animator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(0.25f);
+        SceneManager.sceneLoaded += FadeIn;
+        yield return new WaitForSeconds(0.75f);
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 
