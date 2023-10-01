@@ -8,25 +8,33 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
 
-    [SerializeField] PlayerDummyController player; // will work later, grants access to isPlayerInBubble
+    [SerializeField] PlayerDummyController PlayerDummyControllerComp; // will work later, grants access to isPlayerInBubble
+    [SerializeField] GameObject Player; // will work later, grants access to isPlayerInBubble
     [SerializeField] private int enemyHealth;
     [SerializeField] private int attackDamage;
     [SerializeField] private float enemySpeed = 1.0f;
     [SerializeField] private float enemyRange = 1.0f;
     [SerializeField] private float enemyAttackDelay = 2.5f;
-    [SerializeField] GameObject orb;
+    // [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
+    [SerializeField] private int distanceThreshold;
+    private float playerEnemyDistance;
+
+    private void Start()
+    {
+        PlayerDummyControllerComp = Player.GetComponent<PlayerDummyController>();
+    }
 
     void IsPlayerInBubble() {
-        if (player.playerInBubble && ! IsEnemyInRange()) {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
+        if (PlayerDummyControllerComp.playerInBubble && ! IsEnemyInRange() && playerEnemyDistance < distanceThreshold) {
+            transform.position = Vector2.MoveTowards(transform.position, PlayerDummyControllerComp.transform.position, enemySpeed * Time.deltaTime);
         }
     }
 
     bool IsEnemyInRange() {
-        float distanceBetweenEnemyAndPlayer = Vector2.Distance(gameObject.transform.position, player.transform.position);
+        float distanceBetweenEnemyAndPlayer = Vector2.Distance(gameObject.transform.position, PlayerDummyControllerComp.transform.position);
         if (distanceBetweenEnemyAndPlayer <= enemyRange) { // is player in range of enemy
-            if (player.playerHealth > 0) {
+            if (PlayerDummyControllerComp.playerHealth > 0) {
                 EnemyAttack();
             }
             return true;
@@ -40,13 +48,14 @@ public class EnemyController : MonoBehaviour
         if (timePassed > enemyAttackDelay) {
             // plays animation
             Debug.Log("hit!");
-            player.playerHealth -= 1;
+            PlayerDummyControllerComp.playerHealth -= 1;
             timePassed = 0f;
         }
     }
 
     void OnDeath() { // spawns "orb" at enemy then deletes enemy
-        Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        // Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); ADD LATER: drops orb which can be picked up by player
+        //PlayerDummyControllerComp.playerOrbs -= 1;
         // plays animation
         Destroy(gameObject);
     }
@@ -61,6 +70,12 @@ public class EnemyController : MonoBehaviour
 
     void Update() {
         IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack
+
+        playerEnemyDistance = Vector2.Distance(gameObject.transform.position, PlayerDummyControllerComp.transform.position);
+
+        if (enemyHealth <= 0) {
+            OnDeath();
+        }
         
         if (Input.GetKeyDown(KeyCode.LeftShift)) { // just to test dying
             OnDeath();
@@ -68,11 +83,3 @@ public class EnemyController : MonoBehaviour
     }
 }
 
-
-// health - ability to be hit by player
-// if player is not in bubble, give velocity in direction of player DONE
-// if within range of player, swing and deal damage DONE (need animation though)
-// Could: animation if enemy is touching bubble DONE (again need animation)
-// onDeath - drop orb and delete prefab DONE (animation / particles)
-// spawn function
-// 
