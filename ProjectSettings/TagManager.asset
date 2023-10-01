@@ -42,20 +42,17 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Ground
-    uniqueID: 139587159
+    uniqueID: 1515505773
     locked: 0
-  - name: Walls Back
-    uniqueID: 2225941391
+  - name: Full Wall
+    uniqueID: 3226534609
     locked: 0
-  - name: Player
-    uniqueID: 123594809
+  - name: Entities
+    uniqueID: 2946886681
     locked: 0
-  - name: Walls Front
-    uniqueID: 541087005
+  - name: Cover Wall
+    uniqueID: 371824449
     locked: 0
-  - name: Orb
-    uniqueID: 3127690843
-    locked: 0
-  - name: Safety Bubble
-    uniqueID: 2480742065
+  - name: UI
+    uniqueID: 3498035931
     locked: 0
