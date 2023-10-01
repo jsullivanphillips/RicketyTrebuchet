@@ -121,12 +121,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyHealth: 0
-  attackDamage: 0
+  enemyHealth: 5
+  attackDamage: 1
   enemySpeed: 1
   enemyRange: 1
   enemyAttackDelay: 2.5
   orb: {fileID: 6295383623430332168, guid: 3aa111a28c6fbb04da19aa8e0e7a986b, type: 3}
+  distanceThreshold: 5
 --- !u!212 &3836214036149248324
 SpriteRenderer:
   m_ObjectHideFlags: 0

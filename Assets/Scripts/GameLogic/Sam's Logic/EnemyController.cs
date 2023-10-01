@@ -14,9 +14,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float enemySpeed = 1.0f;
     [SerializeField] private float enemyRange = 1.0f;
     [SerializeField] private float enemyAttackDelay = 2.5f;
-    [SerializeField] GameObject orb;
+    // [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
-    // [SerializeField] private 
+    [SerializeField] private int distanceThreshold;
+    private float playerEnemyDistance;
 
     void IsPlayerInBubble() {
         if (player.playerInBubble && ! IsEnemyInRange() && playerEnemyDistance < distanceThreshold) {
@@ -47,7 +48,7 @@ public class EnemyController : MonoBehaviour
     }
 
     void OnDeath() { // spawns "orb" at enemy then deletes enemy
-        Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        // Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); ADD LATER: drops orb which can be picked up by player
         player.playerOrbs -= 1;
         // plays animation
         Destroy(gameObject);
@@ -64,6 +65,8 @@ public class EnemyController : MonoBehaviour
     void Update() {
         IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack
 
+        playerEnemyDistance = Vector2.Distance(gameObject.transform.position, player.transform.position);
+
         if (enemyHealth <= 0) {
             OnDeath();
         }
@@ -75,7 +78,7 @@ public class EnemyController : MonoBehaviour
 }
 
 
-// health - ability to be hit by player
+// health - ability to be hit by player DONE
 // if player is not in bubble, give velocity in direction of player DONE
 // if within range of player, swing and deal damage DONE (need animation though)
 // Could: animation if enemy is touching bubble DONE (again need animation)
