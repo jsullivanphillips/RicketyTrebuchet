@@ -8033,6 +8033,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   player: {fileID: 240519509}
+  wandOrbit: {fileID: 0}
+  wand: {fileID: 0}
+  wandDist: 0
+  crosshair: {fileID: 0}
+  sparkleBlast: {fileID: 0}
+  blast_distance: 0
 --- !u!212 &240519508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9823,7 +9829,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
