@@ -20,7 +20,5 @@ public class CrosshairController : MonoBehaviour
         
         Vector2 currMousePoz = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = currMousePoz;
-        //transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-        Debug.Log(transform.position);
     }
 }
