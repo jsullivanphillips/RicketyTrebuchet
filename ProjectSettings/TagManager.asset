@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Walls
+  - Ground
   - 
   - 
   - 
@@ -40,4 +40,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 139587159
+    locked: 0
+  - name: Walls Back
+    uniqueID: 2225941391
+    locked: 0
+  - name: Player
+    uniqueID: 123594809
+    locked: 0
+  - name: Walls Front
+    uniqueID: 541087005
+    locked: 0
+  - name: Orb
+    uniqueID: 3127690843
+    locked: 0
+  - name: Safety Bubble
+    uniqueID: 2480742065
     locked: 0
