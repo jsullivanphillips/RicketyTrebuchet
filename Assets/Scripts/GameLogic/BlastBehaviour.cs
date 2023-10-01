@@ -4,27 +4,14 @@ using UnityEngine;
 
 public class BlastBehaviour : MonoBehaviour
 {
-    [SerializeField] private float blast_distance = 5f;
-    [SerializeField] private float blast_speed = 2.5f;
-    [SerializeField] private Transform target;
-    public Transform blast_transform;// = this.transform; // <-- I want to do this, to prevent possible nondeterminism...
+    public float blast_distance = 5f;
+    public float blast_speed = 2.5f;
+    public GameObject self_reference; // will be passed a reference to self via the instantiator class.
+    private Vector2 target;
 
     void Start()
     {
-        //blast_transform = this.transform;
-        /*Vector2 dirVector = Vector3.forward * 4;
-        Debug.Log("forvard:" + transform.forward);
-        target = transform.forward * blast_distance; //new Vector2(dirVector.x * blast_distance, dirVector.y * blast_distance);
-        Debug.Log("Starting roation:" + transform.rotation);
-        Debug.Log("Starting poz:" + transform.position);
-        Debug.Log("Target:" + target);
-        */
-
-        //Vector2 dirVector = 
-
-        //target = new Vector2(transform.position.x + blast_distance, transform.position.y);
-
-        target.position = new Vector2(blast_distance, 0);
+        target = transform.position + transform.right * blast_distance;
     }
 
     // Update is called once per frame
@@ -45,14 +32,20 @@ public class BlastBehaviour : MonoBehaviour
             valToLerp = endVal;
         }*/
 
-        //Vector2 curr_poz = transform.position;
-        float step = blast_speed * Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, target.position, step);
-        /*if (curr_poz.x < target.x) {
-            
+        Vector2 curr_poz = transform.position;
+        Vector2 distance = curr_poz - target;
+        if (distance.magnitude > 0.5f) {
+            Debug.Log(distance.magnitude);
+            float step = blast_speed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, target, step);
         }
-        else {
-            transform.position = target;
-        }*/
+        else { 
+            Debug.Log("DESTROY");
+            endBlast();
+        }
+    }
+
+    private void endBlast() {
+        Destroy(self_reference);
     }
 }

@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private CrosshairController crosshair;
     [SerializeField] private GameObject sparkleBlast;
     [SerializeField] private float blast_distance;
+    [SerializeField] private float blast_speed;
 
 
     // Start is called before the first frame update
@@ -35,6 +36,9 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) {
             GameObject new_blast = Instantiate(sparkleBlast, wand.position, wandOrbit.rotation);
+            new_blast.GetComponent<BlastBehaviour>().self_reference = new_blast;
+            new_blast.GetComponent<BlastBehaviour>().blast_distance = this.blast_distance;
+            new_blast.GetComponent<BlastBehaviour>().blast_speed = this.blast_speed;
         }
 
         if (Input.GetMouseButtonDown(1)) {
