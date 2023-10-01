@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement Config")]
     [SerializeField] private float moveSpeed = 2.5f;
     [SerializeField] private Rigidbody2D player;
     private float moveHorizontal = 0;
     private float moveVertical = 0;
-    //private Vector2 velocity;
+
+    [Header("Wand Config")]
+    [SerializeField] private Transform wandOrbit;
+    [SerializeField] private Transform wand;
+    [SerializeField] private float wandDist;
+
+    [Header("Blaster Config")]
+    [SerializeField] private CrosshairController crosshair;
+    [SerializeField] private GameObject sparkleBlast;
+    [SerializeField] private float blast_distance;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +32,14 @@ public class PlayerController : MonoBehaviour
     {
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
-        //velocity = player.velocity;
+
+        if (Input.GetMouseButtonDown(0)) {
+            GameObject new_blast = Instantiate(sparkleBlast, wand.position, wandOrbit.rotation);
+        }
+
+        if (Input.GetMouseButtonDown(1)) {
+            Debug.Log("right");
+        }
     }
 
     private void FixedUpdate() {
@@ -33,13 +51,7 @@ public class PlayerController : MonoBehaviour
             player.velocity = new Vector2(player.velocity.x, moveSpeed * moveVertical);
         }
 
-        /*if (player.velocity.x <= 0.05f) {
-            player.velocity = new Vector2(0, player.velocity.y);
-        }
-
-        if (player.velocity.y <= 0.05f) {
-            player.velocity = new Vector2(player.velocity.x, 0);
-        }*/
-
+        //TODO: add lag to roation for natural feel (lerp? slerp? quaternion rotation???)
+        wandOrbit.right = crosshair.transform.position - wandOrbit.position;
     }
 }
