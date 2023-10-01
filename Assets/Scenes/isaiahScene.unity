@@ -13176,14 +13176,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab59cba6da7620f4aa4ca57fccdab726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerDummyControllerComp: {fileID: 0}
+  PlayerDummyControllerComp: {fileID: 240519517}
   Player: {fileID: 240519506}
   enemyHealth: 3
   attackDamage: 0
   enemySpeed: 1
   enemyRange: 1
   enemyAttackDelay: 2.5
-  orb: {fileID: 1453359285}
+  distanceThreshold: 10
 --- !u!1 &595238786
 GameObject:
   m_ObjectHideFlags: 0
@@ -14473,11 +14473,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 790626365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1453359285 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2958513595396429782, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
-  m_PrefabInstance: {fileID: 6612376362677823461}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1528185227
 GameObject:
   m_ObjectHideFlags: 0
