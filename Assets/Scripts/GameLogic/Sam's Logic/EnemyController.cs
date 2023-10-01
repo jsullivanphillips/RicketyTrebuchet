@@ -16,9 +16,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float enemyAttackDelay = 2.5f;
     [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
+    // [SerializeField] private 
 
     void IsPlayerInBubble() {
-        if (player.playerInBubble && ! IsEnemyInRange()) {
+        if (player.playerInBubble && ! IsEnemyInRange() && playerEnemyDistance < distanceThreshold) {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
         }
     }
@@ -47,6 +48,7 @@ public class EnemyController : MonoBehaviour
 
     void OnDeath() { // spawns "orb" at enemy then deletes enemy
         Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        player.playerOrbs -= 1;
         // plays animation
         Destroy(gameObject);
     }
@@ -57,12 +59,14 @@ public class EnemyController : MonoBehaviour
     //     }
     // }
 
-    void Start() {
-        
-    }
+
 
     void Update() {
         IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack
+
+        if (enemyHealth <= 0) {
+            OnDeath();
+        }
         
         if (Input.GetKeyDown(KeyCode.LeftShift)) { // just to test dying
             OnDeath();
