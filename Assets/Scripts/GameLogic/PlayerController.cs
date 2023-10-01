@@ -54,4 +54,5 @@ public class PlayerController : MonoBehaviour
         //TODO: add lag to roation for natural feel (lerp? slerp? quaternion rotation???)
         wandOrbit.right = crosshair.transform.position - wandOrbit.position;
     }
+    ///
 }
