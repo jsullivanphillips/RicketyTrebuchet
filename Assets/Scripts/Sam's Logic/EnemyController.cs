@@ -57,9 +57,7 @@ public class EnemyController : MonoBehaviour
     //     }
     // }
 
-    void Start() {
-        
-    }
+
 
     void Update() {
         IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack

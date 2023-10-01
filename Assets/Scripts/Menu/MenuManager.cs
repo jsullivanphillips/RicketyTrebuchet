@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+    void Start()
+    {
+        AudioManager.Singleton.FadeInSong("MainMenu");
+    }
+
     public void OnStartBtn()
     {
-        SceneLoader.Singleton.LoadScene("PlayerScene");
+        AudioManager.Singleton.FadeOutSong("MainMenu");
+        SceneLoader.Singleton.LoadScene("isaiahScene");
     }
 
     public void OnQuitBtn()
