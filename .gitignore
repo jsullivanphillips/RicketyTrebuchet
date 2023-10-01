@@ -26,10 +26,6 @@
 # Visual Studio cache directory
 .vs/
 
-# Compressed Files
-WindowsBuild.zip
-WindowsBuild/
-
 # Gradle cache directory
 .gradle/
 

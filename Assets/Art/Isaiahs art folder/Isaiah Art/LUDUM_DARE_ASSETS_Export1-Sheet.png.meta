@@ -1,0 +1,2599 @@
+fileFormatVersion: 2
+guid: dd75921bd69748946ae1b2b390fb24a0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 257
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21ab78c2a25c5b4fb1d0aff964cb492
+      internalID: 977816794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 260
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74a0f5c71fd0e542b80a2045d0f0dd4
+      internalID: 771833878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 266
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797069c97a1cbd74e8fd978fb86bc452
+      internalID: 2105686753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 275
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bd1d99f5483904ba54ee51b6888311
+      internalID: -850838612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 246
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9e3ff290639cf47a5fd9881d304088
+      internalID: 341917308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 259
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99442c9dae831824bbe4e4ffa82f5b04
+      internalID: -1621945742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 228
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b0d3e710f7b8f4ab8410093e029047
+      internalID: 813466243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 224
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e358594e091a44bbc753748f6e2ec8
+      internalID: -1328981428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 242
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88de266ffb367c14b802300994c75535
+      internalID: -52459863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 243
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621b0c7713f464648aced1c26bec8e88
+      internalID: 126712073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 226
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0e5e4b155b62a488b9262139c923b4
+      internalID: 843324086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 227
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189bc6e2ac4e37b4e902b952e4916df2
+      internalID: 700982671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 227
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c14599183e482a4f8962518676ec885
+      internalID: 964083088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e08c8245d713e24eb3d3db5038a1573
+      internalID: 479984406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 192
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14ad81543dbecf43a1c6dca657dc720
+      internalID: -1265925309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 197
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f044909362e290489be22f0e6754206
+      internalID: 2138516194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 211
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2baa22c1fe2f847ac98d0ccf929e0c
+      internalID: -1865288755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 195
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f448c950dfce04da21079c50931d8b
+      internalID: 488530385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03f4102533755b4e9b38d6d7447698f
+      internalID: -1235346675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 148
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb20cbacddf84d4a965dc2c90a5793e
+      internalID: -93797015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 179
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c3c1db2b39b1740adbbeb47f976002
+      internalID: 1745283226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 163
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb44b66ecee0fe48a358be074ba070d
+      internalID: 282148746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 147
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a72de566f15654b9070978910eb0ae
+      internalID: -820682339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 118
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef16f66e4912604eaa92c4197b43acd
+      internalID: -1891335021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 112
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b654dd8dafbebbe41b5b9f714a9e1162
+      internalID: 1445319684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 119
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6145dceba4a86a6458561aaadcde2612
+      internalID: -1781799040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 131
+        width: 72
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c87980d9e1b6bc42bff55bd7632e13e
+      internalID: -1062523886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 98
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826529f7bb9c91e4b9e56a1c6625a39a
+      internalID: -1035257606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 100
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bceff0562a2d88047a287ad19a7d22eb
+      internalID: -1882677889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 99
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cfa7259dfc09b4e9b793af9cc90060
+      internalID: -639054701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0ed0e475f97ea41863bbd87f27624d
+      internalID: 1634831355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 100
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e38f5ab90eb8f45ba3087725d5f0da
+      internalID: -608435280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 104
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded4fa3aadf4b1f49aa74f40f3a414d7
+      internalID: -11861575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 102
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccf6cf13280d8d43a7c3af33af3d4bd
+      internalID: -1784437786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 104
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86039fa7891c810469ef88c4f2a4d8ae
+      internalID: 744886113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 70
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9556908f016dde24aaa3ad5c67e348f9
+      internalID: 311524361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 70
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d8d31036e29414d894c0e60e81c25d
+      internalID: 262103052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 82
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a9d7f09d80a644696a98c5d7bd402d
+      internalID: -289794904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 84
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282f2085b8bf40e4c986f22b12000736
+      internalID: 747187564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 83
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e2f296b7c762740a63ade016f30f8f
+      internalID: -1138109218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 82
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d08fd2d5fbf0e54483a0c6ef93a11a1
+      internalID: -2051589072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 83
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69d904dd9d40db4ab81abff2d4dce6b
+      internalID: 334198585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 65
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a768a9542ba974944b834e483fd91413
+      internalID: -1704742313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 68
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09363f78d70bca3499cb87ef419d9de4
+      internalID: -720775676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 67
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a9709cf7c265044b0ebeb8060c235c
+      internalID: -1540649487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 68
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638d0e9c60d6057438de6a3a049cc7df
+      internalID: 740804831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 38
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ecf44a2cb56f24b95dd1145f068f34
+      internalID: 1745534109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 38
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2373ae01598c7044d8369a3d30e39e82
+      internalID: -1445920251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 33
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baffffd79e8aa04b9ef2ca318bbc093
+      internalID: -673461983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 36
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c964c0bd0e65d754db3b296e99cd8b2f
+      internalID: -450565196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 53
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b7cf38952f28f458486c7bb1b3bfa6
+      internalID: -543772153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 53
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ebbadff349edf4fa2a151ce5afd30e
+      internalID: -387407237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 24
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224d852eba2356d4f80b02eef5004755
+      internalID: 1964327413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 53
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886095a4e56570141830e596613f14b2
+      internalID: 1037104165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eadb95398625f4384bf36329d9cc9c
+      internalID: 354507465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b804365d90f3324e9ec571b17ec5b82
+      internalID: -1163112809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa531e52c9652c4f91411ef91d6b5d1
+      internalID: -1994553056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069921ab07e35f545b1580ab450643c8
+      internalID: -12660107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e866db87f279178458445bc4aee06799
+      internalID: -700773206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5bf56fe3e7e3a4d821c38c903543c7
+      internalID: 1702213677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f9d7a166bfcfb48afb97021411868d
+      internalID: 1453804078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1252e2f61cbf3d24b830c650b62e4ebf
+      internalID: 1190219232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08548af9a8217574bb438701a1c312db
+      internalID: 1158783103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83870c820308d304ca0ae8cb1a16a388
+      internalID: -826001995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff91773e7177bb489a843f3de9d9a07
+      internalID: -1724302012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dddfdbba12bf7c4d95e3524d93397d1
+      internalID: 247825853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b796b93db1e7644aaae4475d81627c
+      internalID: -1646240698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a535cf215cb389746ac7762e46aedc21
+      internalID: 19171341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7c173d52f02f647ae863c750b7b1ce
+      internalID: -606256804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e729b94df0198754b8f2fa949491c4b6
+      internalID: -1817507953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975154b702125bd46ab30e32855edc20
+      internalID: 585008995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f974def843a123e4baccb884ecf86302
+      internalID: 1679604446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509fdbb620b04844382cfd3fbc7f60d4
+      internalID: 1231857503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41674ff1d662444f8c9aa59157f1645
+      internalID: -960269879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b702bbe4aa727047a6f39fc9ac993d3
+      internalID: 1756899538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8ec7c483663394090985714d3a1b31
+      internalID: -1891268930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c757f3a5a480854296d2b1db07197ba
+      internalID: -443679953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e278199d38ff741a8e762cc4afd6bd
+      internalID: 1226343653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b90837f61c3204a92634a65440acf2
+      internalID: -1679650831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980852cf052412a479b92751565cc24e
+      internalID: -185459685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782fce431d2e4d2498e370cba92f2308
+      internalID: -1558074859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f496b33e93442945aee730fb7a4b06b
+      internalID: 101041686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0deb41021ee3dc74183476bb050a12b4
+      internalID: -124241444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a65877bcf8666488c0db4d886d9681
+      internalID: -1492398765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e821f1ec5170b4ab0dafea4e044e3c
+      internalID: -864577816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af0c05c983dfed4b9e9cde85888fe0c
+      internalID: 416643342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93b38a081a93b844afbe1b081a3fe55
+      internalID: -33454419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f011e6f838990543b65bb88e321a98e
+      internalID: -588128345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17def1123b6e4a44d910f525c4f64394
+      internalID: -638435485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d4411c3a58ad44d9afa3b7a5163d55
+      internalID: 381672670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864c119a4ee581c438425785e75e083d
+      internalID: 107831245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2281e8a715a16ee4fb524ea1d780a9c8
+      internalID: -919155219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17349f3572310b045926d1230ea7e9f0
+      internalID: 1960458619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50b191f4f525ca47825d2f68afb0192
+      internalID: 318716222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7528c5c8a63c742bf0a2fd8bf566f6
+      internalID: -481281613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7af63118bb46c4a991b9a9ead9068a
+      internalID: 706887702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ebb330469ff864b94e4370bf0240ce
+      internalID: -486928166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bf1599ac57c3d43af39f0b65c56e2d
+      internalID: 1996211783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5782ec3b313f1f4480261a91fdb8de2
+      internalID: -1729445844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b017b2d1213984e83863f4a269c0ab
+      internalID: -1948213069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc2c400754297f478e173337e687448
+      internalID: -513215428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c43bdb2430ab434d8c246b8d42cd22a
+      internalID: -11582017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 35
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac907749bda7a6a459ed197a1d3e0fda
+      internalID: 719128129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 42
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adabf514c9d88ec4a989f8c64dbc0a2a
+      internalID: 223523944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 42
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d6204d04704f74bbd9bf6e0d2308dd
+      internalID: -1946056653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 35
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282bd131f26672144a5ab3f2ab2ef416
+      internalID: 1156087339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 82
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5222b7441b7535a42b5b611feefb5251
+      internalID: 2064565332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 82
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920a52cff550d434eaca00ac77c4ebf7
+      internalID: -1102093173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 102
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99f81d3e2e8ab04599953eaebbc6fdd
+      internalID: -932669379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 102
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fa28fa6cf4df147ab3ba02ec992a4e
+      internalID: 433256271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 53
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425290a1afb995e42b8e121e975efd04
+      internalID: -264287507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LUDUM_DARE_ASSETS_Export1-Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 53
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ec0c612f805c4449e6f122b6491e43
+      internalID: -832928331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      LUDUM_DARE_ASSETS_Export1-Sheet_1: 771833878
+      LUDUM_DARE_ASSETS_Export1-Sheet_40: -1138109218
+      LUDUM_DARE_ASSETS_Export1-Sheet_76: -443679953
+      LUDUM_DARE_ASSETS_Export1-Sheet_64: -1724302012
+      LUDUM_DARE_ASSETS_Export1-Sheet_53: 1964327413
+      LUDUM_DARE_ASSETS_Export1-Sheet_90: 107831245
+      LUDUM_DARE_ASSETS_Export1-Sheet_57: -12660107
+      LUDUM_DARE_ASSETS_Export1-Sheet_9: -52459863
+      LUDUM_DARE_ASSETS_Export1-Sheet_12: 700982671
+      LUDUM_DARE_ASSETS_Export1-Sheet_19: -1235346675
+      LUDUM_DARE_ASSETS_Export1-Sheet_24: -1891335021
+      LUDUM_DARE_ASSETS_Export1-Sheet_28: -1035257606
+      LUDUM_DARE_ASSETS_Export1-Sheet_74: 1756899538
+      LUDUM_DARE_ASSETS_Export1-Sheet_11: 843324086
+      LUDUM_DARE_ASSETS_Export1-Sheet_2: 2105686753
+      LUDUM_DARE_ASSETS_Export1-Sheet_75: -1891268930
+      LUDUM_DARE_ASSETS_Export1-Sheet_61: 1190219232
+      LUDUM_DARE_ASSETS_Export1-Sheet_31: 1634831355
+      LUDUM_DARE_ASSETS_Export1-Sheet_91: -919155219
+      LUDUM_DARE_ASSETS_Export1-Sheet_108: 1156087339
+      LUDUM_DARE_ASSETS_Export1-Sheet_94: -481281613
+      LUDUM_DARE_ASSETS_Export1-Sheet_79: -185459685
+      LUDUM_DARE_ASSETS_Export1-Sheet_93: 318716222
+      LUDUM_DARE_ASSETS_Export1-Sheet_6: -1621945742
+      LUDUM_DARE_ASSETS_Export1-Sheet_96: -486928166
+      LUDUM_DARE_ASSETS_Export1-Sheet_60: 1453804078
+      LUDUM_DARE_ASSETS_Export1-Sheet_106: -372882836
+      LUDUM_DARE_ASSETS_Export1-Sheet_98: -1729445844
+      LUDUM_DARE_ASSETS_Export1-Sheet_55: -1163112809
+      LUDUM_DARE_ASSETS_Export1-Sheet_29: -1882677889
+      LUDUM_DARE_ASSETS_Export1-Sheet_33: -11861575
+      LUDUM_DARE_ASSETS_Export1-Sheet_68: -606256804
+      LUDUM_DARE_ASSETS_Export1-Sheet_58: -700773206
+      LUDUM_DARE_ASSETS_Export1-Sheet_102: 223523944
+      LUDUM_DARE_ASSETS_Export1-Sheet_38: -289794904
+      LUDUM_DARE_ASSETS_Export1-Sheet_99: -1948213069
+      LUDUM_DARE_ASSETS_Export1-Sheet_7: 813466243
+      LUDUM_DARE_ASSETS_Export1-Sheet_109: 2064565332
+      LUDUM_DARE_ASSETS_Export1-Sheet_83: -1492398765
+      LUDUM_DARE_ASSETS_Export1-Sheet_104: -1362571923
+      LUDUM_DARE_ASSETS_Export1-Sheet_84: -864577816
+      LUDUM_DARE_ASSETS_Export1-Sheet_30: -639054701
+      LUDUM_DARE_ASSETS_Export1-Sheet_23: -820682339
+      LUDUM_DARE_ASSETS_Export1-Sheet_26: -1781799040
+      LUDUM_DARE_ASSETS_Export1-Sheet_73: -960269879
+      LUDUM_DARE_ASSETS_Export1-Sheet_63: -826001995
+      LUDUM_DARE_ASSETS_Export1-Sheet_41: -2051589072
+      LUDUM_DARE_ASSETS_Export1-Sheet_0: 977816794
+      LUDUM_DARE_ASSETS_Export1-Sheet_14: 479984406
+      LUDUM_DARE_ASSETS_Export1-Sheet_105: -1568256528
+      LUDUM_DARE_ASSETS_Export1-Sheet_3: -850838612
+      LUDUM_DARE_ASSETS_Export1-Sheet_44: -720775676
+      LUDUM_DARE_ASSETS_Export1-Sheet_34: -1784437786
+      LUDUM_DARE_ASSETS_Export1-Sheet_35: 744886113
+      LUDUM_DARE_ASSETS_Export1-Sheet_54: 1037104165
+      LUDUM_DARE_ASSETS_Export1-Sheet_89: 381672670
+      LUDUM_DARE_ASSETS_Export1-Sheet_66: -1646240698
+      LUDUM_DARE_ASSETS_Export1-Sheet_46: 740804831
+      LUDUM_DARE_ASSETS_Export1-Sheet_10: 126712073
+      LUDUM_DARE_ASSETS_Export1-Sheet_59: 1702213677
+      LUDUM_DARE_ASSETS_Export1-Sheet_77: 1226343653
+      LUDUM_DARE_ASSETS_Export1-Sheet_37: 262103052
+      LUDUM_DARE_ASSETS_Export1-Sheet_20: -93797015
+      LUDUM_DARE_ASSETS_Export1-Sheet_103: -1946056653
+      LUDUM_DARE_ASSETS_Export1-Sheet_72: 1231857503
+      LUDUM_DARE_ASSETS_Export1-Sheet_16: 2138516194
+      LUDUM_DARE_ASSETS_Export1-Sheet_71: 1679604446
+      LUDUM_DARE_ASSETS_Export1-Sheet_18: 488530385
+      LUDUM_DARE_ASSETS_Export1-Sheet_22: 282148746
+      LUDUM_DARE_ASSETS_Export1-Sheet_62: 1158783103
+      LUDUM_DARE_ASSETS_Export1-Sheet_95: 706887702
+      LUDUM_DARE_ASSETS_Export1-Sheet_107: 719128129
+      LUDUM_DARE_ASSETS_Export1-Sheet_56: -1994553056
+      LUDUM_DARE_ASSETS_Export1-Sheet_43: -1704742313
+      LUDUM_DARE_ASSETS_Export1-Sheet_85: 416643342
+      LUDUM_DARE_ASSETS_Export1-Sheet_4: 354507465
+      LUDUM_DARE_ASSETS_Export1-Sheet_27: -1062523886
+      LUDUM_DARE_ASSETS_Export1-Sheet_69: -1817507953
+      LUDUM_DARE_ASSETS_Export1-Sheet_110: -1102093173
+      LUDUM_DARE_ASSETS_Export1-Sheet_65: 247825853
+      LUDUM_DARE_ASSETS_Export1-Sheet_15: -1265925309
+      LUDUM_DARE_ASSETS_Export1-Sheet_67: 19171341
+      LUDUM_DARE_ASSETS_Export1-Sheet_87: -588128345
+      LUDUM_DARE_ASSETS_Export1-Sheet_42: 334198585
+      LUDUM_DARE_ASSETS_Export1-Sheet_5: 341917308
+      LUDUM_DARE_ASSETS_Export1-Sheet_101: -11582017
+      LUDUM_DARE_ASSETS_Export1-Sheet_8: -1328981428
+      LUDUM_DARE_ASSETS_Export1-Sheet_88: -638435485
+      LUDUM_DARE_ASSETS_Export1-Sheet_70: 585008995
+      LUDUM_DARE_ASSETS_Export1-Sheet_36: 311524361
+      LUDUM_DARE_ASSETS_Export1-Sheet_39: 747187564
+      LUDUM_DARE_ASSETS_Export1-Sheet_17: -1865288755
+      LUDUM_DARE_ASSETS_Export1-Sheet_80: -1558074859
+      LUDUM_DARE_ASSETS_Export1-Sheet_52: -387407237
+      LUDUM_DARE_ASSETS_Export1-Sheet_48: -1445920251
+      LUDUM_DARE_ASSETS_Export1-Sheet_21: 1745283226
+      LUDUM_DARE_ASSETS_Export1-Sheet_25: 1445319684
+      LUDUM_DARE_ASSETS_Export1-Sheet_78: -1679650831
+      LUDUM_DARE_ASSETS_Export1-Sheet_51: -543772153
+      LUDUM_DARE_ASSETS_Export1-Sheet_92: 1960458619
+      LUDUM_DARE_ASSETS_Export1-Sheet_100: -513215428
+      LUDUM_DARE_ASSETS_Export1-Sheet_81: 101041686
+      LUDUM_DARE_ASSETS_Export1-Sheet_45: -1540649487
+      LUDUM_DARE_ASSETS_Export1-Sheet_82: -124241444
+      LUDUM_DARE_ASSETS_Export1-Sheet_111: -932669379
+      LUDUM_DARE_ASSETS_Export1-Sheet_97: 1996211783
+      LUDUM_DARE_ASSETS_Export1-Sheet_47: 1745534109
+      LUDUM_DARE_ASSETS_Export1-Sheet_49: -673461983
+      LUDUM_DARE_ASSETS_Export1-Sheet_86: -33454419
+      LUDUM_DARE_ASSETS_Export1-Sheet_50: -450565196
+      LUDUM_DARE_ASSETS_Export1-Sheet_32: -608435280
+      LUDUM_DARE_ASSETS_Export1-Sheet_13: 964083088
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
