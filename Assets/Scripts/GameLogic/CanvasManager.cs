@@ -28,9 +28,9 @@ public class CanvasManager : MonoBehaviour
     {
         BrendanManager.instance.setCanvasRef(this);
 
-        curr_hearts = BrendanManager.instance.getStartHearts();
-        curr_orbs = BrendanManager.instance.getStartOrbs();
-        curr_sparkles = BrendanManager.instance.getStartSparkles();
+        curr_hearts = GameManager.instance.getStartHearts();
+        curr_orbs = GameManager.instance.getStartOrbs();
+        curr_sparkles = GameManager.instance.getStartSparkles();
 
         setupUI();
     }
@@ -66,9 +66,19 @@ public class CanvasManager : MonoBehaviour
     }
 
     public void setOrbs(int to_set) {        
-        Debug.Log("orby" + to_set);
+        //Debug.Log("orby" + to_set);
 
-        if (to_set > curr_orbs) {
+        for (int i = 0; i < 5; i++) {
+            if (i < to_set) {
+                orbs[i].SetActive(true);
+            }
+            else {
+                orbs[i].SetActive(false);
+            }
+        }
+        
+
+        /*if (to_set > curr_orbs) {
             Debug.Log("higher");
             for (int i = curr_orbs; i <= to_set; i++) {
                 //Debug.Log("I: " + i + " , while to set os: " + to_set);
@@ -81,7 +91,7 @@ public class CanvasManager : MonoBehaviour
                 //Debug.Log("Butt I: " + i);
                 orbs[i - 1].SetActive(false);
             }
-        }
+        }*/
 
         curr_orbs = to_set;
     }
