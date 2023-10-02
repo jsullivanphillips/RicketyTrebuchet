@@ -64,6 +64,11 @@ public class GameManager : MonoBehaviour
         canvasManager.setSparkleBar(curr_sparkle);
     }
 
+    public void setSparkle(int to_set) {
+        curr_sparkle = to_set;
+        canvasManager.setSparkleBar(curr_sparkle);
+    }
+
     public int getCurrentHealth() {
         return curr_health;
     }

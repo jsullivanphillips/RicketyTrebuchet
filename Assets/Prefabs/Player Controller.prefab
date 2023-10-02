@@ -207,7 +207,7 @@ MonoBehaviour:
   - {x: 0.0030608177, y: -1.4679871, z: 0}
   m_ShapePathHash: -419141273
   m_Mesh: {fileID: 0}
-  m_InstanceId: 32436
+  m_InstanceId: -1754
   m_LocalBounds:
     m_Center: {x: -0.10064387, y: -1.4115436, z: 0}
     m_Extent: {x: 0.10370469, y: 0.106235266, z: 0}
@@ -376,11 +376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1f42c7eb6947b4aaf2b11e8142867a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wandOrbit: {fileID: 0}
-  wand: {fileID: 0}
+  wand: {fileID: 7112336040507529865}
   wandDist: 0
-  crosshair: {fileID: 0}
-  sparkleBlast: {fileID: 0}
+  WandPower: 9
+  PowerChunk: 0
+  sparkle: {fileID: 129332589766356000, guid: f08da499a4e569b49aae9447a9e06685, type: 3}
+  PlayerHealth: 5
   MovementSpeed: 5
   rigidbody2D: {fileID: 9044874263406146384}
   facingRight: 0
@@ -890,7 +891,7 @@ MonoBehaviour:
   - {x: -0.36075664, y: -0.6272979, z: 0}
   m_ShapePathHash: 582293447
   m_Mesh: {fileID: 0}
-  m_InstanceId: 32494
+  m_InstanceId: -1770
   m_LocalBounds:
     m_Center: {x: -0.48085368, y: -0.6709585, z: 0}
     m_Extent: {x: 0.12009704, y: 0.04366064, z: 0}
@@ -1086,7 +1087,7 @@ MonoBehaviour:
   - {x: 0.049461126, y: -2.4589796, z: 0}
   m_ShapePathHash: 1532261019
   m_Mesh: {fileID: 0}
-  m_InstanceId: 32434
+  m_InstanceId: -1762
   m_LocalBounds:
     m_Center: {x: -0.1604402, y: -2.3130429, z: 0}
     m_Extent: {x: 0.20990133, y: 0.14593673, z: 0}
