@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6816585571902886425}
   - component: {fileID: 7992994523939233493}
   - component: {fileID: 404590071718330621}
+  - component: {fileID: 8165881458457718905}
   m_Layer: 0
   m_Name: Sparkle Blast
   m_TagString: Untagged
@@ -160,8 +161,8 @@ SpriteRenderer:
   m_SortingLayerID: -1348080615
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1037104165, guid: dd75921bd69748946ae1b2b390fb24a0, type: 3}
-  m_Color: {r: 1, g: 0.97429186, b: 0, a: 1}
+  m_Sprite: {fileID: -450565196, guid: dd75921bd69748946ae1b2b390fb24a0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1049,7 +1050,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 3.49
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1155,7 +1156,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 1
+    enabled: 0
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -5010,3 +5011,38 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!70 &8165881458457718905
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129332589766356000}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.030430265, y: -0.03745258}
+  m_Size: {x: 0.5641404, y: 0.5500962}
+  m_Direction: 1

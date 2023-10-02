@@ -71,7 +71,7 @@ public class EnemyController : MonoBehaviour
     void Update() {
         IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack
 
-        playerEnemyDistance = Vector2.Distance(gameObject.transform.position, PlayerDummyControllerComp.transform.position);
+        playerEnemyDistance = Vector2.Distance(gameObject.transform.position, Player.transform.position);
 
         if (enemyHealth <= 0) {
             OnDeath();
