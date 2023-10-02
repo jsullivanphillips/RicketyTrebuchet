@@ -683,7 +683,7 @@ MonoBehaviour:
   - name: MainTheme
     clip: {fileID: 8300000, guid: e9e6a6b04b23be44c9daa687094e1266, type: 3}
     isMusic: 1
-    volume: 0.7
+    volume: 0.9
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -800,8 +800,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285256947
-  m_fontColor: {r: 0.9528302, g: 0.83240694, b: 0.4179868, a: 1}
+    rgba: 4289654271
+  m_fontColor: {r: 1, g: 0.927962, b: 0.6839622, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
