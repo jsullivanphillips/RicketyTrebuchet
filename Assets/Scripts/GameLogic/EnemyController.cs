@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private int attackDamage;
     [SerializeField] private float enemySpeed = 1.0f;
     [SerializeField] private float enemyRange = 1.0f;
-    [SerializeField] private float enemyAttackDelay = 2.5f;
+    [SerializeField] private float enemyAttackDelay = 1f;
     // [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
     [SerializeField] private int distanceThreshold;
@@ -22,6 +22,7 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
+        Player = GameObject.Find("Player");
         PlayerDummyControllerComp = Player.GetComponent<PlayerDummyController>();
     }
 
@@ -34,7 +35,7 @@ public class EnemyController : MonoBehaviour
     bool IsEnemyInRange() {
         float distanceBetweenEnemyAndPlayer = Vector2.Distance(gameObject.transform.position, PlayerDummyControllerComp.transform.position);
         if (distanceBetweenEnemyAndPlayer <= enemyRange) { // is player in range of enemy
-            if (PlayerDummyControllerComp.playerHealth > 0) {
+            if (Player.GetComponent<Player_Controller_test>().PlayerHealth > 0) {
                 EnemyAttack();
             }
             return true;
@@ -48,7 +49,6 @@ public class EnemyController : MonoBehaviour
         if (timePassed > enemyAttackDelay) {
             // plays animation
             Player.GetComponent<Player_Controller_test>().PlayerHealth -= 1;
-            PlayerDummyControllerComp.playerHealth -= 1;
             timePassed = 0f;
         }
     }
