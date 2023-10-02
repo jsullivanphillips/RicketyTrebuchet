@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
     private float timePassed = 0f; // for attack delay
     [SerializeField] private int distanceThreshold;
     private float playerEnemyDistance;
+    [SerializeField] private bool facingRight;
 
     private void Start()
     {
@@ -79,6 +80,41 @@ public class EnemyController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.LeftShift)) { // just to test dying
             OnDeath();
+        }
+
+        if (enemyHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+        Vector3 difference = Player.transform.position - transform.position;
+
+        if (difference.x >= 0 && !facingRight)
+        { // mouse is on right side of player
+            transform.localScale = new Vector3(1, 1, 1); // or activate look right some other way
+            facingRight = true;
+        }
+        if (difference.x < 0 && facingRight)
+        { // mouse is on left side
+            transform.localScale = new Vector3(-1, 1, 1); // activate looking left
+            facingRight = false;
+        }
+
+    }
+
+    private void OnTriggerStay2D(Collider2D Object)
+    {
+        if (Object.gameObject.name == "Sparkle Blast")
+        {
+            enemyHealth -= 1;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            Debug.Log("hit");
+            enemyHealth -= 1;
         }
     }
 }

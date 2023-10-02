@@ -144,6 +144,18 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 607836370}
+    - target: {fileID: 2025558496523168956, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
+      propertyPath: enemyRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025558496523168956, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
+      propertyPath: enemyHealth
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025558496523168956, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
+      propertyPath: enemyAttackDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3836214036149248324, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
       propertyPath: m_SortingLayer
       value: 3
@@ -211,7 +223,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3836214036149248345, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 924505255}
   m_SourcePrefab: {fileID: 100100000, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
 --- !u!1 &242829520
 GameObject:
@@ -25657,10 +25672,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1008940371792850518, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
-      propertyPath: BubbleScaleSpeed
-      value: 0.0008
-      objectReference: {fileID: 0}
     - target: {fileID: 2958513595396429782, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
       propertyPath: m_Name
       value: Crystal
@@ -25708,13 +25719,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4089069861965655300, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 844347591}
-    - targetCorrespondingSourceObject: {fileID: 4089069861965655300, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 844347592}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
 --- !u!43 &498686441
 Mesh:
@@ -68911,18 +68916,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &844347589 stripped
+--- !u!1 &924505250 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4089069861965655300, guid: d3f9a25ff3f0ca247ba0a959337d5535, type: 3}
-  m_PrefabInstance: {fileID: 448601272}
+  m_CorrespondingSourceObject: {fileID: 3836214036149248345, guid: 9158dcc6abac1124faf949dccc3d7c63, type: 3}
+  m_PrefabInstance: {fileID: 202414594}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &844347591
-PolygonCollider2D:
+--- !u!58 &924505255
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844347589}
+  m_GameObject: {fileID: 924505250}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -68948,41 +68953,9 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 2.656117, y: 0.69572765}
-      - {x: -0.065371685, y: 1.1961143}
-      - {x: -2.767936, y: 0.7477667}
-      - {x: -4.235977, y: -0.32835576}
-      - {x: -3.1632369, y: -1.4154892}
-      - {x: -1.3885868, y: -1.8059337}
-      - {x: 1.4866441, y: -1.822276}
-      - {x: 2.857857, y: -1.395917}
-      - {x: 3.6149478, y: -0.3120129}
-  m_UseDelaunayMesh: 0
---- !u!114 &844347592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844347589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c765f420cc151cd4297b46fa411d6c51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  m_Offset: {x: 0.26308966, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5879107
 --- !u!1001 &1090458445
 PrefabInstance:
   m_ObjectHideFlags: 0
