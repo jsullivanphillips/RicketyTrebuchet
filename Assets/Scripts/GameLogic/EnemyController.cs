@@ -1,42 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
-// using System.Numerics; //do I need this? other controllers don't have it and it makes new Vector2 throw an error
+// using System.Numerics; // do I need this? other controllers don't have it and it makes new Vector2 throw an error
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
+// TODO: List of functions Brendan need to implement: playerIsInBubble(), getCurrentHealth(), hurtPlayer(), addOrb()
+
 public class EnemyController : MonoBehaviour
 {
 
-    [SerializeField] PlayerDummyController PlayerDummyControllerComp; // will work later, grants access to isPlayerInBubble
-    [SerializeField] GameObject Player; // will work later, grants access to isPlayerInBubble
+    // [SerializeField] PlayerDummyController PlayerDummyControllerComp;
     [SerializeField] private int enemyHealth;
-    [SerializeField] private int attackDamage;
+    [SerializeField] private int attackDamage; // not using
     [SerializeField] private float enemySpeed = 1.0f;
     [SerializeField] private float enemyRange = 1.0f;
     [SerializeField] private float enemyAttackDelay = 1f;
+    [SerializeField] private float enemyStrollFrequency = 3f; // how often the enemy walks around (in seconds) while player in bubble
     // [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
     [SerializeField] private int distanceThreshold;
     private float playerEnemyDistance;
+    private Transform Player;
+    
     [SerializeField] private bool facingRight;
 
     private void Start()
     {
-        Player = GameObject.Find("Player");
-        PlayerDummyControllerComp = Player.GetComponent<PlayerDummyController>();
+        //Player = GameObject.Find("Player");
+        //PlayerDummyControllerComp = Player.GetComponent<PlayerDummyController>();
+        Player = GameObject.Find("Player Controller").transform;
     }
 
     void IsPlayerInBubble() {
-        if (PlayerDummyControllerComp.playerInBubble && ! IsEnemyInRange() && playerEnemyDistance < distanceThreshold) {
-            transform.position = Vector2.MoveTowards(transform.position, PlayerDummyControllerComp.transform.position, enemySpeed * Time.deltaTime);
-        }
+        if (GameManager.instance.playerIsInBubble() && ! IsEnemyInRange()) { // wait for brendan
+            if (playerEnemyDistance < distanceThreshold) {
+                transform.position = Vector2.MoveTowards(transform.position, Player.position, enemySpeed * Time.deltaTime);
+            } else {
+                // DoAFunnyLittleDance();
+            }
+        }  
     }
 
     bool IsEnemyInRange() {
-        float distanceBetweenEnemyAndPlayer = Vector2.Distance(gameObject.transform.position, PlayerDummyControllerComp.transform.position);
+        float distanceBetweenEnemyAndPlayer = Vector2.Distance(gameObject.transform.position, Player.position);
         if (distanceBetweenEnemyAndPlayer <= enemyRange) { // is player in range of enemy
-            if (Player.GetComponent<Player_Controller_test>().PlayerHealth > 0) {
+            if (GameManager.instance.getCurrentHealth() > 0) { // wait for brendan
                 EnemyAttack();
             }
             return true;
@@ -49,14 +58,33 @@ public class EnemyController : MonoBehaviour
         timePassed += Time.deltaTime;
         if (timePassed > enemyAttackDelay) {
             // plays animation
-            Player.GetComponent<Player_Controller_test>().PlayerHealth -= 1;
+            GameManager.instance.hurtPlayer(); // wait for brendan
             timePassed = 0f;
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.tag == "Projectile") {
+            enemyHealth -= 1;
+        }
+    }
+
+    // private void DoAFunnyLittleDance() { // makes the enemy stroll around a radius when player is in bubble
+    //     timePassed += Time.deltaTime;
+    //     if (timePassed > enemyStrollFrequency) {
+    //         Vector2 enemyPos = new Vector2(transform.position.x, transform.position.y);
+    //         Vector2 randomPoint = new Vector2(Random.insideUnitCircle * 5);
+    //         while (enemyPos != randomPoint) {
+    //             transform.position = Vector2.MoveTowards(enemyPos, randomPoint, enemySpeed * Time.deltaTime); // MAYBE WORKS IDK
+    //         }
+    //         timePassed = 0f;
+    //     }
+        
+    // }
+
     void OnDeath() { // spawns "orb" at enemy then deletes enemy
         // Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); ADD LATER: drops orb which can be picked up by player
-        //PlayerDummyControllerComp.playerOrbs -= 1;
+        GameManager.instance.addOrb(); // wait for brendan
         // plays animation
         Destroy(gameObject);
     }
@@ -72,7 +100,7 @@ public class EnemyController : MonoBehaviour
     void Update() {
         IsPlayerInBubble(); // calls IsPlayerInRange, which calls EnemyAttack
 
-        playerEnemyDistance = Vector2.Distance(gameObject.transform.position, Player.transform.position);
+        playerEnemyDistance = Vector2.Distance(gameObject.transform.position, Player.position);
 
         if (enemyHealth <= 0) {
             OnDeath();
@@ -86,7 +114,7 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        Vector3 difference = Player.transform.position - transform.position;
+        Vector3 difference = Player.position - transform.position;
 
         if (difference.x >= 0 && !facingRight)
         { // mouse is on right side of player

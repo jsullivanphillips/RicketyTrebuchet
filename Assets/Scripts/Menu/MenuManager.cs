@@ -6,13 +6,13 @@ public class MenuManager : MonoBehaviour
 {
     void Start()
     {
-        AudioManager.Singleton.FadeInSong("MainMenu");
+        AudioManager.Singleton.FadeInSong("MainTheme");
     }
 
     public void OnStartBtn()
     {
-        AudioManager.Singleton.FadeOutSong("MainMenu");
-        SceneLoader.Singleton.LoadScene("ProductionScene");
+        AudioManager.Singleton.FadeOutSong("MainTheme");
+        SceneLoader.Singleton.LoadScene("LevelScene");
     }
 
     public void OnQuitBtn()
