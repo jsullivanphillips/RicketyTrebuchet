@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float enemySpeed = 1.0f;
     [SerializeField] private float enemyRange = 1.0f;
     [SerializeField] private float enemyAttackDelay = 2.5f;
+    [SerializeField] private float enemyStrollFrequency = 3f; // how often the enemy walks around (in seconds) while player in bubble
     // [SerializeField] GameObject orb;
     private float timePassed = 0f; // for attack delay
     [SerializeField] private int distanceThreshold;
@@ -28,9 +29,13 @@ public class EnemyController : MonoBehaviour
     }
 
     void IsPlayerInBubble() {
-        if (GameManager.instance.playerIsInBubble() && ! IsEnemyInRange() && playerEnemyDistance < distanceThreshold) { // wait for brendan
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, enemySpeed * Time.deltaTime);
-        }
+        if (GameManager.instance.playerIsInBubble() && ! IsEnemyInRange()) { // wait for brendan
+            if (playerEnemyDistance < distanceThreshold) {
+                transform.position = Vector2.MoveTowards(transform.position, Player.position, enemySpeed * Time.deltaTime);
+            } else {
+                DoAFunnyLittleDance();
+            }
+        }  
     }
 
     bool IsEnemyInRange() {
@@ -60,9 +65,22 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    // private void DoAFunnyLittleDance() { // makes the enemy stroll around a radius when player is in bubble
+    //     timePassed += Time.deltaTime;
+    //     if (timePassed > enemyStrollFrequency) {
+    //         Vector2 enemyPos = new Vector2(transform.position.x, transform.position.y);
+    //         Vector2 randomPoint = new Vector2(Random.insideUnitCircle * 5);
+    //         while (enemyPos != randomPoint) {
+    //             transform.position = Vector2.MoveTowards(enemyPos, randomPoint, enemySpeed * Time.deltaTime); // MAYBE WORKS IDK
+    //         }
+    //         timePassed = 0f;
+    //     }
+        
+    // }
+
     void OnDeath() { // spawns "orb" at enemy then deletes enemy
         // Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); ADD LATER: drops orb which can be picked up by player
-        GameManager.instance.addCrystal();// wait for brendan
+        GameManager.instance.addCrystal(); // wait for brendan
         // plays animation
         Destroy(gameObject);
     }
