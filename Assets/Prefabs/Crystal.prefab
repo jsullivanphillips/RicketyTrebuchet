@@ -342,9 +342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights: {fileID: 4525885700969218498}
-  Bubble: {fileID: 0}
+  Bubble: {fileID: 4089069861965655300}
   ScaleSpeed: 0.6
-  BubbleScaleSpeed: 0
+  BubbleScaleSpeed: 0.0008
   DimSpeed: 0.1
   ColorFadeSpeed: 0.06
   LightComp: {fileID: 1594009374119870650}
@@ -434,7 +434,7 @@ SpriteRenderer:
   m_Size: {x: 1.68, y: 1.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4089069861965655300
@@ -447,7 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2926718297226176038}
   - component: {fileID: 4893322670922860218}
-  - component: {fileID: 8031573717882852926}
+  - component: {fileID: 2849036677047811132}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Untagged
@@ -526,7 +526,7 @@ PolygonCollider2D:
       - {x: 2.857857, y: -1.395917}
       - {x: 3.6149478, y: -0.3120129}
   m_UseDelaunayMesh: 0
---- !u!114 &8031573717882852926
+--- !u!114 &2849036677047811132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4089069861965655300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f9d11c54a722da4492a75068e80fe05, type: 3}
+  m_Script: {fileID: 11500000, guid: c765f420cc151cd4297b46fa411d6c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
@@ -703,6 +703,6 @@ SpriteRenderer:
   m_Size: {x: 1.68, y: 1.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

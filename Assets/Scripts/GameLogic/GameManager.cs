@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     private int curr_orb;
     private int curr_sparkle;
 
+    private bool inBubble = false;
+
     public static GameManager instance { get; private set;}
 
     private void Awake() {
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
     }
 
     ////// Functions to interact with player
+    
     public void hurtPlayer() {
         curr_health -= 1;
         canvasManager.setHearts(curr_health);
@@ -41,6 +44,11 @@ public class GameManager : MonoBehaviour
 
     public void spendOrb() {
         curr_orb -= 1;
+        canvasManager.setOrbs(curr_orb);
+    }
+
+    public void addOrb() {
+        curr_orb += 1;
         canvasManager.setOrbs(curr_orb);
     }
 
@@ -66,6 +74,22 @@ public class GameManager : MonoBehaviour
 
     public int getCurrentHealth() {
         return curr_health;
+    }
+
+    public bool playerIsInBubble() {
+        return inBubble;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Bubble") {
+            inBubble = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        if (other.tag == "Bubble") {
+            inBubble = true;
+        }
     }
 
 
