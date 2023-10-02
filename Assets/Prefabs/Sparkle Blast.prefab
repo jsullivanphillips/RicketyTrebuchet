@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1348080615
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1037104165, guid: dd75921bd69748946ae1b2b390fb24a0, type: 3}
   m_Color: {r: 1, g: 0.97429186, b: 0, a: 1}
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast_distance: 5
   blast_speed: 2.5
+  target: {fileID: 0}
   blast_transform: {fileID: 129332589766356031}
 --- !u!50 &6225363031316297615
 Rigidbody2D:
