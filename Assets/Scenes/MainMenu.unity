@@ -706,10 +706,17 @@ MonoBehaviour:
     isMusic: 0
     volume: 0.617
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
-  - name: CastEnd
+  - name: CastStop
     clip: {fileID: 8300000, guid: 62f66855de69f8646a946c01c9a7f17b, type: 3}
+    isMusic: 1
+    volume: 0.7
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: SpookySong
+    clip: {fileID: 8300000, guid: 2a5ebc6159a813c44826caaa7d75c266, type: 3}
     isMusic: 1
     volume: 0.7
     pitch: 1

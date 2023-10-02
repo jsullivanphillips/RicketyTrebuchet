@@ -50,6 +50,7 @@ public class Player_Controller_test : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && Chrystal_spawn_count > 0 && Can_spawn_Crystal == true)
         {
+            AudioManager.Singleton.Play("ButtonClick");
             Chrystal_spawn_count -= 1;
             Cooldown_timer_Crystal = 0;
             Can_spawn_Crystal = false;
@@ -62,10 +63,17 @@ public class Player_Controller_test : MonoBehaviour
 
         if (Input.GetMouseButton(1))
         {
+            
             new_blast = Instantiate(sparkle, wand.position, wand.rotation); ;
 
             new_blast.GetComponent<Rigidbody2D>().velocity = wand.rotation * Vector2.right*28;
         }
+        if(Input.GetMouseButtonDown(1))
+        {
+            AudioManager.Singleton.Play("CastStart");
+            AudioManager.Singleton.Play("Casting");
+        }
+
 
         if (difference.x >= 0 && !facingRight)
         { // mouse is on right side of player
