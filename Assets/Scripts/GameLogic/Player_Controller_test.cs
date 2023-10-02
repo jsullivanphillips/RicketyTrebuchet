@@ -8,7 +8,7 @@ public class Player_Controller_test : MonoBehaviour
     [Header("Wand Config")]
     [SerializeField] private Transform wand;
     [SerializeField] private float wandDist;
-    [SerializeField] private float WandPower = 9;
+    [SerializeField] public float WandPower = 9;
     [SerializeField] private int PowerChunk;
 
     [Header("Blaster Config")]
@@ -39,7 +39,6 @@ public class Player_Controller_test : MonoBehaviour
     void Update()
     {
         PowerChunk = (int)(WandPower + 0.999);
-        Debug.Log("Pow: " + PowerChunk);
         GameManager.instance.setSparkle(PowerChunk);
 
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
