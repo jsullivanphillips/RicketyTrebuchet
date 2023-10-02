@@ -8,7 +8,7 @@ public class Player_Controller_test : MonoBehaviour
     [Header("Wand Config")]
     [SerializeField] private Transform wand;
     [SerializeField] private float wandDist;
-    [SerializeField] private float WandPower = 10;
+    public float WandPower = 10;
     [SerializeField] private float PowerChunk;
 
     [Header("Blaster Config")]
@@ -57,7 +57,7 @@ public class Player_Controller_test : MonoBehaviour
             Can_spawn_Crystal = true;
         }
 
-        if (Input.GetMouseButtonDown(0) && Chrystal_spawn_count > 0 && Can_spawn_Crystal == true)
+        if (Input.GetMouseButtonDown(1) && Chrystal_spawn_count > 0 && Can_spawn_Crystal == true)
         {
             Chrystal_spawn_count -= 1;
             Cooldown_timer_Crystal = 0;
@@ -69,7 +69,7 @@ public class Player_Controller_test : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButton(1) && WandPower>0)
+        if (Input.GetMouseButton(0) && WandPower>0)
         {
             new_blast = Instantiate(sparkle, wand.position, wand.rotation); ;
 
@@ -81,6 +81,14 @@ public class Player_Controller_test : MonoBehaviour
         if (WandPower < 0)
         {
             WandPower = 0;
+        }
+        if (WandPower > 10)
+        {
+            WandPower = 10;
+        }
+        if (PlayerHealth <= 0)
+        {
+            Debug.Log("ded lol");
         }
 
         if (difference.x >= 0 && !facingRight)
