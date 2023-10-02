@@ -7,11 +7,11 @@ using UnityEngine.AI;
 
 // TODO: List of functions Brendan need to implement: playerIsInBubble()
 
-public class EnemyController : MonoBehaviour
+public class NormalEnemyController : MonoBehaviour
 {
     [SerializeField] private int enemyHealth;
     [SerializeField] private int attackDamage; // not using
-    [SerializeField] private float enemySpeed = 1.0f;
+    [SerializeField] private float enemySpeed = 1.5f;
     [SerializeField] private float enemyRange = 1.0f;
     [SerializeField] private float enemyAttackDelay = 2.5f;
     [SerializeField] private float enemyStrollFrequency = 3f; // how often the enemy walks around (in seconds) while player in bubble
@@ -53,7 +53,6 @@ public class EnemyController : MonoBehaviour
         if (timePassed > enemyAttackDelay) {
             // plays animation
             GameManager.instance.hurtPlayer();
-            GameManager.instance.hurtPlayer();
             timePassed = 0f;
         }
     }
@@ -77,9 +76,7 @@ public class EnemyController : MonoBehaviour
         
     // }
 
-    void OnDeath() { // spawns "orb" at enemy then deletes enemy
-        // Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); ADD LATER: drops orb which can be picked up by player
-        GameManager.instance.addOrb();
+    void OnDeath() { 
         // plays animation
         Destroy(gameObject);
     }
