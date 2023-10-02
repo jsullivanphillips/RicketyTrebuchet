@@ -134,11 +134,10 @@ MonoBehaviour:
   player: {fileID: 3018886793428281841}
   wandOrbit: {fileID: 2499843712899528904}
   wand: {fileID: 4818802426113315437}
-  wandDist: 0.9
+  wandDist: 5
   crosshair: {fileID: 0}
   sparkleBlast: {fileID: 129332589766356000, guid: f08da499a4e569b49aae9447a9e06685, type: 3}
   blast_distance: 5
-  blast_speed: 2.5
 --- !u!70 &3958357785515285274
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

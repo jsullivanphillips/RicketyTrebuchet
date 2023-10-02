@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class Player_Controller_test : MonoBehaviour
 {
+
+    [Header("Wand Config")]
+    [SerializeField] private Transform wandOrbit;
+    [SerializeField] private Transform wand;
+    [SerializeField] private float wandDist;
+
+    [Header("Blaster Config")]
+    [SerializeField] private CrosshairController crosshair;
+    [SerializeField] private GameObject sparkleBlast;
+
+    [Header("Other stuff")]
     public float MovementSpeed = 5.0f; // 2D Movement speed to have independant axis speed
     [SerializeField] private new Rigidbody2D rigidbody2D; // Local rigidbody variable to hold a reference to the attached Rigidbody2D component
     private Vector2 inputVector;
@@ -17,8 +28,7 @@ public class Player_Controller_test : MonoBehaviour
 
     void Start()
     {
-        rigidbody2D.angularDrag = 0.0f;
-        rigidbody2D.gravityScale = 0.0f;
+
     }
 
     void Update()
@@ -46,6 +56,12 @@ public class Player_Controller_test : MonoBehaviour
             mouseWorldPos.z = 0f; // zero z
             Instantiate(Crystal_Prefab, mouseWorldPos, Quaternion.identity);
 
+        }
+
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            GameObject new_blast = Instantiate(sparkleBlast, wand.position, wandOrbit.rotation);
         }
 
         if (difference.x >= 0 && !facingRight)
