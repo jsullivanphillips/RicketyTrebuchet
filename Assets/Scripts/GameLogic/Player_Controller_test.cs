@@ -8,10 +8,10 @@ public class Player_Controller_test : MonoBehaviour
     [Header("Wand Config")]
     [SerializeField] private Transform wandOrbit;
     [SerializeField] private Transform wand;
-    [SerializeField] private float wandDist;
+    //[SerializeField] private float wandDist;
 
     [Header("Blaster Config")]
-    [SerializeField] private CrosshairController crosshair;
+    //[SerializeField] private CrosshairController crosshair;
     [SerializeField] private GameObject sparkleBlast;
 
     [Header("Other stuff")]
