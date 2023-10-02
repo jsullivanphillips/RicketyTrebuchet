@@ -57,8 +57,19 @@ public class NormalEnemyController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if (other.tag == "Projectile") {
+    private void OnTriggerStay2D(Collider2D Object)
+    {
+        if (Object.gameObject.name == "Sparkle Blast")
+        {
+            enemyHealth -= 1;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            Debug.Log("hit");
             enemyHealth -= 1;
         }
     }
@@ -97,10 +108,6 @@ public class NormalEnemyController : MonoBehaviour
         if (enemyHealth <= 0) {
             OnDeath();
         }
-        
-        // if (Input.GetKeyDown(KeyCode.LeftShift)) { // just to test dying
-        //     OnDeath();
-        // }
     }
 }
 

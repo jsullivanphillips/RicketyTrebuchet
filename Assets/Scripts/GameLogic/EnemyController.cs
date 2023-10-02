@@ -62,12 +62,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if (other.tag == "Projectile") {
-            enemyHealth -= 1;
-        }
-    }
-
     // private void DoAFunnyLittleDance() { // makes the enemy stroll around a radius when player is in bubble
     //     timePassed += Time.deltaTime;
     //     if (timePassed > enemyStrollFrequency) {
@@ -105,14 +99,6 @@ public class EnemyController : MonoBehaviour
             OnDeath();
         }
         
-        if (Input.GetKeyDown(KeyCode.LeftShift)) { // just to test dying
-            OnDeath();
-        }
-
-        if (enemyHealth <= 0)
-        {
-            Destroy(this.gameObject);
-        }
         Vector3 difference = Player.position - transform.position;
 
         if (difference.x >= 0 && !facingRight)
@@ -145,4 +131,3 @@ public class EnemyController : MonoBehaviour
         }
     }
 }
-
