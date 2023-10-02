@@ -345,10 +345,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerDummyControllerComp: {fileID: 0}
-  Player: {fileID: 0}
+  Player: {fileID: 3414373788248380083, guid: 0460e6e2c84cc9f40a015718c476de0a, type: 3}
   enemyHealth: 3
   attackDamage: 0
-  enemySpeed: 8
+  enemySpeed: 1
   enemyRange: 1
   enemyAttackDelay: 2.5
   distanceThreshold: 10
@@ -364,8 +364,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
-  m_LinearDrag: 0
+  m_Mass: 10000
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
