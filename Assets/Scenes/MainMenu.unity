@@ -667,7 +667,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: MainMenu
-    clip: {fileID: 8300000, guid: 2a5ebc6159a813c44826caaa7d75c266, type: 3}
+    clip: {fileID: 8300000, guid: 1b1f19371e6b5fa41bceef291ee18581, type: 3}
     isMusic: 0
     volume: 1
     pitch: 1
@@ -689,34 +689,6 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Ambience
     clip: {fileID: 8300000, guid: edd7b1557f6d29a498f3e5f5c2449f80, type: 3}
-    isMusic: 1
-    volume: 0.7
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: CastStart
-    clip: {fileID: 8300000, guid: 54c7cd4adb967014f9f4a266ec053e24, type: 3}
-    isMusic: 0
-    volume: 0.7
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Casting
-    clip: {fileID: 8300000, guid: 314a5c6c1c223234da52c7dcc93b4feb, type: 3}
-    isMusic: 0
-    volume: 0.617
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: CastStop
-    clip: {fileID: 8300000, guid: 62f66855de69f8646a946c01c9a7f17b, type: 3}
-    isMusic: 1
-    volume: 0.7
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: SpookySong
-    clip: {fileID: 8300000, guid: 2a5ebc6159a813c44826caaa7d75c266, type: 3}
     isMusic: 1
     volume: 0.7
     pitch: 1
@@ -776,7 +748,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 700, y: 152.2555}
+  m_SizeDelta: {x: 477.5507, y: 152.2555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119676924
 MonoBehaviour:
@@ -798,7 +770,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <|Beacon|>
+  m_text: Beacon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9175eaa1cbbac6844a78868a1ad5deb1, type: 2}
   m_sharedMaterial: {fileID: -6264996289783495287, guid: 9175eaa1cbbac6844a78868a1ad5deb1, type: 2}
