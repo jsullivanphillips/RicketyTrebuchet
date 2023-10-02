@@ -6,13 +6,18 @@ public class Player_Controller_test : MonoBehaviour
 {
 
     [Header("Wand Config")]
-    [SerializeField] private Transform wandOrbit;
     [SerializeField] private Transform wand;
-    //[SerializeField] private float wandDist;
+    [SerializeField] private float wandDist;
+    [SerializeField] private float WandPower = 10;
+    [SerializeField] private float PowerChunk;
 
     [Header("Blaster Config")]
-    //[SerializeField] private CrosshairController crosshair;
-    [SerializeField] private GameObject sparkleBlast;
+    ///[SerializeField] private CrosshairController crosshair;
+    private GameObject new_blast;
+    [SerializeField] private GameObject sparkle;
+
+    [Header("Player Stats")]
+    public int PlayerHealth = 5;
 
     [Header("Other stuff")]
     public float MovementSpeed = 5.0f; // 2D Movement speed to have independant axis speed
@@ -33,6 +38,11 @@ public class Player_Controller_test : MonoBehaviour
 
     void Update()
     {
+        PowerChunk = (int)(WandPower + 0.999);
+
+
+
+
 
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -59,9 +69,18 @@ public class Player_Controller_test : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1) && WandPower>0)
         {
-            GameObject new_blast = Instantiate(sparkleBlast, wand.position, wandOrbit.rotation);
+            new_blast = Instantiate(sparkle, wand.position, wand.rotation); ;
+
+            new_blast.GetComponent<Rigidbody2D>().velocity = wand.rotation * Vector2.right*28;
+
+            WandPower -= Time.deltaTime;
+        }
+
+        if (WandPower < 0)
+        {
+            WandPower = 0;
         }
 
         if (difference.x >= 0 && !facingRight)

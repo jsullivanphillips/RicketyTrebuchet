@@ -47,7 +47,7 @@ public class EnemyController : MonoBehaviour
         timePassed += Time.deltaTime;
         if (timePassed > enemyAttackDelay) {
             // plays animation
-            Debug.Log("hit!");
+            Player.GetComponent<Player_Controller_test>().PlayerHealth -= 1;
             PlayerDummyControllerComp.playerHealth -= 1;
             timePassed = 0f;
         }
