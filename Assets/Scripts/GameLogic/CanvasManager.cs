@@ -26,7 +26,7 @@ public class CanvasManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BrendanManager.instance.setCanvasRef(this);
+        GameManager.instance.setCanvasRef(this);
 
         curr_hearts = GameManager.instance.getStartHearts();
         curr_orbs = GameManager.instance.getStartOrbs();

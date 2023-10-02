@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [Header("Player Config")]
-    [Range(0,8)]
+    [Range(1,4)]
     [SerializeField] int starting_health = 4;
     [Range(0, 5)]
     [SerializeField] int starting_orbs = 5;
@@ -51,6 +51,11 @@ public class GameManager : MonoBehaviour
 
     public void spendSparkle() {
         curr_sparkle -= 1;
+        canvasManager.setSparkleBar(curr_sparkle);
+    }
+
+    public void addSparkle() {
+        curr_sparkle += 1;
         canvasManager.setSparkleBar(curr_sparkle);
     }
 
