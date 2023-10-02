@@ -8,7 +8,7 @@ public class Player_Controller_test : MonoBehaviour
     [Header("Wand Config")]
     [SerializeField] private Transform wand;
     [SerializeField] private float wandDist;
-    [SerializeField] private float WandPower = 9;
+    [SerializeField] public float WandPower = 9;
     [SerializeField] private int PowerChunk;
 
     [Header("Blaster Config")]
@@ -24,7 +24,7 @@ public class Player_Controller_test : MonoBehaviour
     [SerializeField] private new Rigidbody2D rigidbody2D; // Local rigidbody variable to hold a reference to the attached Rigidbody2D component
     private Vector2 inputVector;
     [SerializeField] public bool facingRight;
-    public int Chrystal_spawn_count = 3;
+    public int Chrystal_spawn_count = 5;
     public float Cooldown_timer_Crystal = 0;
     public float Cooldown_timer_limit_Crystal = 5;
     public bool Can_spawn_Crystal = false;
@@ -39,7 +39,6 @@ public class Player_Controller_test : MonoBehaviour
     void Update()
     {
         PowerChunk = (int)(WandPower + 0.999);
-        Debug.Log("Pow: " + PowerChunk);
         GameManager.instance.setSparkle(PowerChunk);
 
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
@@ -57,6 +56,7 @@ public class Player_Controller_test : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && Chrystal_spawn_count > 0 && Can_spawn_Crystal == true)
         {
+            GameManager.instance.spendOrb();
             Chrystal_spawn_count -= 1;
             Cooldown_timer_Crystal = 0;
             Can_spawn_Crystal = false;
