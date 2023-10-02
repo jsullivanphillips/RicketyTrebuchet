@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
         canvasManager.setOrbs(curr_orb);
     }
 
+    public void addOrb() {
+        curr_orb += 1;
+        canvasManager.setOrbs(curr_orb);
+    }
+
     public void refreshOrbs() {
         curr_orb = 5;
         canvasManager.setOrbs(5);

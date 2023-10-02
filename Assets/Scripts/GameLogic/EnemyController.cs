@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-// TODO: List of functions Brendan need to implement: playerIsInBubble(), getCurrentHealth(), hurtPlayer(), addCrystal()
+// TODO: List of functions Brendan need to implement: playerIsInBubble(), getCurrentHealth(), hurtPlayer(), addOrb()
 
 public class EnemyController : MonoBehaviour
 {
@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
             if (playerEnemyDistance < distanceThreshold) {
                 transform.position = Vector2.MoveTowards(transform.position, Player.position, enemySpeed * Time.deltaTime);
             } else {
-                DoAFunnyLittleDance();
+                // DoAFunnyLittleDance();
             }
         }  
     }
@@ -80,7 +80,7 @@ public class EnemyController : MonoBehaviour
 
     void OnDeath() { // spawns "orb" at enemy then deletes enemy
         // Instantiate(orb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); ADD LATER: drops orb which can be picked up by player
-        GameManager.instance.addCrystal(); // wait for brendan
+        GameManager.instance.addOrb(); // wait for brendan
         // plays animation
         Destroy(gameObject);
     }
