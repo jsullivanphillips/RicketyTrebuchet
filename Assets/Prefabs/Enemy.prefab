@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3836214036149248347}
+  - component: {fileID: 5685151444905368542}
   - component: {fileID: 3836214036149248344}
   - component: {fileID: 3836214036149248346}
-  - component: {fileID: 3836214036149248325}
   - component: {fileID: 3836214036149248324}
-  - component: {fileID: 3836214036149248327}
+  - component: {fileID: 1087008011528651190}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -28,14 +28,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3836214036149248345}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.22, y: 2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5685151444905368542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3836214036149248345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab59cba6da7620f4aa4ca57fccdab726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDummyControllerComp: {fileID: 0}
+  Player: {fileID: 0}
+  enemyHealth: 5
+  attackDamage: 1
+  enemySpeed: 2
+  enemyRange: 1
+  enemyAttackDelay: 2.5
+  distanceThreshold: 10
 --- !u!61 &3836214036149248344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46,6 +66,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -79,29 +118,16 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3836214036149248325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3836214036149248345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c137df0976fc38e4cbc482750fffb102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemyHealth: 0
-  attackDamage: 0
-  enemySpeed: 1
-  enemyRange: 1
-  enemyAttackDelay: 2.5
-  orb: {fileID: 0}
 --- !u!212 &3836214036149248324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -154,19 +180,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &3836214036149248327
-CircleCollider2D:
+--- !u!114 &1087008011528651190
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3836214036149248345}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.67
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab59cba6da7620f4aa4ca57fccdab726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerDummyControllerComp: {fileID: 0}
+  Player: {fileID: 0}
+  enemyHealth: 5
+  attackDamage: 1
+  enemySpeed: 1
+  enemyRange: 1
+  enemyAttackDelay: 2.5
+  distanceThreshold: 10
