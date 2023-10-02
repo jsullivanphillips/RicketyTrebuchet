@@ -694,6 +694,27 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: SpookySong
+    clip: {fileID: 8300000, guid: 34ee3b1b2d24081429963d032dfc470c, type: 3}
+    isMusic: 0
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CastStart
+    clip: {fileID: 8300000, guid: 34ee3b1b2d24081429963d032dfc470c, type: 3}
+    isMusic: 0
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Casting
+    clip: {fileID: 8300000, guid: 34ee3b1b2d24081429963d032dfc470c, type: 3}
+    isMusic: 0
+    volume: 0.7
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   volume: 1
   isMusicEnabled: 1
   isSoundEnabled: 1
