@@ -8,8 +8,8 @@ public class Player_Controller_test : MonoBehaviour
     [Header("Wand Config")]
     [SerializeField] private Transform wand;
     [SerializeField] private float wandDist;
-    public float WandPower = 10;
-    [SerializeField] private float PowerChunk;
+    [SerializeField] private float WandPower = 9;
+    [SerializeField] private int PowerChunk;
 
     [Header("Blaster Config")]
     ///[SerializeField] private CrosshairController crosshair;
@@ -39,10 +39,8 @@ public class Player_Controller_test : MonoBehaviour
     void Update()
     {
         PowerChunk = (int)(WandPower + 0.999);
-
-
-
-
+        Debug.Log("Pow: " + PowerChunk);
+        GameManager.instance.setSparkle(PowerChunk);
 
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
