@@ -8,12 +8,11 @@ public class Player_Controller_test : MonoBehaviour
     [Header("Wand Config")]
     [SerializeField] private Transform wandOrbit;
     [SerializeField] private Transform wand;
-    [SerializeField] private float wandDist;
+    //[SerializeField] private float wandDist;
 
     [Header("Blaster Config")]
-    [SerializeField] private CrosshairController crosshair;
-    [SerializeField] private GameObject new_blast;
-    [SerializeField] private GameObject sparkle;
+    //[SerializeField] private CrosshairController crosshair;
+    [SerializeField] private GameObject sparkleBlast;
 
     [Header("Other stuff")]
     public float MovementSpeed = 5.0f; // 2D Movement speed to have independant axis speed
@@ -60,11 +59,9 @@ public class Player_Controller_test : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            new_blast = Instantiate(sparkle, wand.position, wand.rotation); ;
-
-            new_blast.GetComponent<Rigidbody2D>().velocity = wand.rotation * Vector2.right*28;
+            GameObject new_blast = Instantiate(sparkleBlast, wand.position, wandOrbit.rotation);
         }
 
         if (difference.x >= 0 && !facingRight)
